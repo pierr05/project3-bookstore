@@ -11,7 +11,7 @@ const server = new ApolloServer({
     resolvers,
   });
 
-// NOTE: MODULE NOT FOUND ERROR NEED TO BE RESOLVED
+// NOTE: MODULE NOT FOUND ERROR NEED TO BE FIXED
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
