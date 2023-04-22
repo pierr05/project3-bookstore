@@ -1,0 +1,26 @@
+{
+  "name": "project3-bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierr05/project3-bookstore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierr05/project3-bookstore/issues"
+  },
+  "homepage": "https://github.com/pierr05/project3-bookstore#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
