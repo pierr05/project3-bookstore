@@ -19,5 +19,8 @@
   "homepage": "https://github.com/pierr05/project3-bookstore#readme",
   "dependencies": {
     "concurrently": "^8.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
   }
 }
