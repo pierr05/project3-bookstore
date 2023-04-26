@@ -1,11 +1,11 @@
-import React, {createContext, useState, useEffect} from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ProductContext = createContext();
 
 const ProductProvider = ({children}) => {
 
 
-  const [products,setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
 const fetchProducts = async ()=> {
@@ -15,7 +15,7 @@ setProducts(data);
 };
 fetchProducts();
   },[]);
-  return <ProductContext.Provider value={{products}}>
+  return <ProductContext.Provider value={{ products }}>
     {children}</ProductContext.Provider>;
 };
 
