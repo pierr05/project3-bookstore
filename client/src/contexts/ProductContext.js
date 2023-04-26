@@ -9,7 +9,7 @@ const ProductProvider = ({children}) => {
 
   useEffect(() => {
 const fetchProducts = async ()=> {
-  const response = await fetch('https://fakestoreapi.com/products');
+  const response = await fetch('https://api2.isbndb.com/book/9781118443927');
 const data =  await response.json();
 setProducts(data);
 };
