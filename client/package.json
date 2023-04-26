@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "project3-bookstore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +36,10 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.3",
+    "tailwindcss": "^3.2.4"
   }
 }
