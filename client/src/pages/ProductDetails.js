@@ -4,16 +4,17 @@ import { useParams } from 'react-router-dom';
 // import cart context
 import { CartContext } from '../contexts/CartContext';
 // import product context
-import { ProductContext } from '../contexts/ProductContext';
+// import { ProductContext } from '../contexts/ProductContext';
+import { ApiContext } from '../contexts/ApiContext';
 
 const ProductDetails = () => {
   // get the product id from the url
   const { id } = useParams();
-  const { products } = useContext(ProductContext);
+  const { Books } = useContext(ApiContext);
   const { addToCart } = useContext(CartContext);
 
   // get the single product based on the id
-  const product = products.find((item) => {
+  const product = Books.find((item) => {
     return item.id === parseInt(id);
   });
 
@@ -27,7 +28,7 @@ const ProductDetails = () => {
   }
 
   // destructure product
-  const { title, price, description, image } = product;
+  const { title, price, synopsis, image } = product;
   return (
     <section className='pt-32 pb-12 lg:py-32 h-screen flex items-center'>
       <div className='container mx-auto'>
@@ -45,7 +46,7 @@ const ProductDetails = () => {
             <div className='text-xl text-red-500 font-medium mb-6'>
               $ {price}
             </div>
-            <p className='mb-8'>{description}</p>
+            <p className='mb-8'>{synopsis}</p>
             <button
               onClick={() => addToCart(product, product.id)}
               className='bg-primary py-4 px-8 text-white'

@@ -6,7 +6,7 @@ const ProductProvider = ({children}) => {
 
 
   const [products, setProducts] = useState([]);
- //due to the await fetch request the styling doesn't show. helpppppppp TTTT
+ //due to the await fetch request the styling doesn't show. helpppppppp TT_TT
   useEffect(() => {
 const fetchProducts = async ()=> {
   const response = await fetch('https://api2.isbndb.com/book/9781118443927');
