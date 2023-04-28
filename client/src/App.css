@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #e4e5e8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(228, 222, 222);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #10ce75;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,184 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Center everything */
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+/* Anchor site to the top */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%; /* Set width to 100% */
+	background-color: #FCD5CE;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Adjust layout based on screen size */
+@media screen and (min-width: 768px) {
+	body {
+		flex-direction: row;
+	}
+}
+
+/* Style the search form */
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+input[type="text"] {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+button[type="submit"] {
+	margin-left: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #0062cc;
+}
+
+/* Slideshow styles */
+.slideshow {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.slide-item {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.slide-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.slide-item p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Featured categories styles */
+.featured-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #4ce2a4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.category-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.category-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Wrappers styles */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+
+.footer {
+  background-color: #c8dbd5;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+/* Modal container */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(143, 18, 18, 0.5);
+  z-index: 9999;
+  display: none;
+}
+
+/* Modal content */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(208, 196, 196);
+  padding: 20px;
+  z-index: 10000;
+  max-width: 400px;
+  max-height: 600px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* added */
+}
+
+/* Modal image */
+.modal-image {
+  width: 200px; /* added */
+  height: 100px;
+}
+
+/* Close button */
+#close-button {
+  display: block;
+  margin: 20px auto 0;
 }
