@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
-  body {
-    @apply font-primary text-primary;
-  }
+    button{
+        @apply border border-black rounded-xl px-5 py-1
+    }
 }
