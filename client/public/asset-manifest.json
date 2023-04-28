@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eaaed586.css",
+    "main.js": "/static/js/main.1d785f8f.js",
+    "static/media/logo.jpg": "/static/media/logo.2639eba880764c2fcdb3.jpg",
+    "static/media/bookshop-g5ad495994_1280.png": "/static/media/bookshop-g5ad495994_1280.f20a1f987b2fe338cc57.png",
+    "static/media/bg_hero.svg": "/static/media/bg_hero.cd5c9e83759e74a20d2b.svg",
+    "index.html": "/index.html",
+    "main.eaaed586.css.map": "/static/css/main.eaaed586.css.map",
+    "main.1d785f8f.js.map": "/static/js/main.1d785f8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaaed586.css",
+    "static/js/main.1d785f8f.js"
+  ]
+}
