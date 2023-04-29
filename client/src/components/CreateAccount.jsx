@@ -57,7 +57,7 @@ function CreateAccount() {
         <input
           type="email"
           id="email-input"
-          className="w-70 h-10"
+          className="w-70 h-11 rounded-lg"
           value={email}
           onChange={handleEmailChange}
         />
@@ -67,7 +67,7 @@ function CreateAccount() {
         <input
           type="password"
           id="password-input"
-          className="w-70 h-10"
+          className="w-70 h-11 rounded-lg"
           value={password}
           onChange={handlePasswordChange}
         />
