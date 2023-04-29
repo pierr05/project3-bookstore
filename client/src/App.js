@@ -13,10 +13,10 @@ function App() {
     <div>
 {/* <HomePage /> */}
        {/*<Login />*/} 
-      <Home /> 
-      {/* <Product/> */}
+    {/*  <Home /> */}
+     {/*  <Product/> */}
        {/*<CreateAccount /> */}
-      {/*<ProductPage />*/}
+      <ProductPage />
     </div>
   );
 }

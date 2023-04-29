@@ -14,26 +14,26 @@ const Product = () => {
 
 
     return (
-        <div className='flex flex-col justify-between lg:flex-row gap-4 lg:items-center bg-purple-200'>
+        <div className='flex flex-col justify-between lg:flex-row gap-4 lg:items-center bg-pink-400'>
             <div className='flex flex-col gap-6 lg:w-2/4'>
                 <img src={activeImg} alt='' className='w-1/2 h-50 ml-20' />
             </div>
             {/* About */}
             <div className='flex flex-col gap-4 lg:w-2/4 mx-20'>
                 <div>
-                    <span className='font-semibold'>headtitle</span>
-                    <h1 className='text-3xl font-bold'>Harry Potter Book</h1>
+                    <span className='font-semibold text-white'>headtitle</span>
+                    <h1 className='text-3xl font-bold text-white'>Harry Potter Book</h1>
                 </div>
-                <p className='text-gray-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus aliquam dui, aliquet faucibus odio mattis nec. Fusce ultricies tincidunt nisl at molestie. Donec vel elementum risus, at bibendum nunc. Pellentesque luctus purus sed urna sollicitudin, id sodales ex congue. Duis viverra posuere mi. Curabitur at lacinia libero. Nam sed porttitor lacus. Sed ultrices neque id quam finibus consectetur. Cras ut imperdiet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean quam justo, auctor et nulla quis, cursus pellentesque arcu. Nam pharetra nisl quis luctus faucibus.
+                <p className='text-gray-200'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus aliquam dui, aliquet faucibus odio mattis nec. Fusce ultricies tincidunt nisl at molestie. Donec vel elementum risus, at bibendum nunc. Pellentesque luctus purus sed urna sollicitudin, id sodales ex congue. Duis viverra posuere mi. Curabitur at lacinia libero. Nam sed porttitor lacus. Sed ultrices neque id quam finibus consectetur. Cras ut imperdiet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean quam justo, auctor et nulla quis, cursus pellentesque arcu. Nam pharetra nisl quis luctus faucibus.
                 </p>
-                <h6 className=' text-2xl font-semibold'>$ 25.99</h6>
+                <h6 className=' text-2xl font-semibold text-white'>$ 25.99</h6>
                 <div className='flex flex-row items-center gap-12'>
                     <div className=' flex flow-row items-center'>
-                        <button className=' bg-violet-300 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
+                        <button className=' bg-pink-200 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
                         <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                        <button className='bg-violet-300 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+                        <button className='bg-pink-200 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
                     </div>
-                    <button className='bg-violet-300 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+                    <button className='bg-pink-200 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
                 </div>
             </div>
         </div>
