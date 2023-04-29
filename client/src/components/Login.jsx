@@ -1,11 +1,10 @@
 import React from 'react'
-import Bookshop from '../assets/Bookshop.png'
 
 export default function Login() {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-96 p-10 shadow-lg bg-gradient-to-r from-pink-300 via-pink-400 to-pink-500 rounded-md">
-        <h1 className="text-3xl block text-center font-semibold text-gray-200"><i className="fa-solid fa-user"></i> Login</h1>
+        <h1 className="text-3xl block text-center font-semibold text-white"><i className="fa-solid fa-user"></i> Login</h1>
           {/* <!-- Username --> */}
           <div className="mt-3">
             <label for="username" className="block text-base mb-2 text-white">Username/Email</label>
