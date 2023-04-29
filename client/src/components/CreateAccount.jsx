@@ -30,11 +30,11 @@ function CreateAccount() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-50 p-8 shadow-lg bg-gradient-to-r  from-pink-800 via-red-600 to-pink-800 rounded-md">
-        <h1 className="text-3xl block text-center font-semibold text-pink-400"><i className="fa-solid fa-user"></i> Sign Up</h1>
+      <div className="w-50 p-8 shadow-lg bg-gradient-to-r  from-pink-300 via-pink-400 to-pink-500 rounded-md">
+        <h1 className="text-3xl block text-center font-semibold text-gray-200"><i className="fa-solid fa-user"></i> Sign Up</h1>
     <form onSubmit={handleSubmit}>
       <div className='flex flex-col'>
-      <div className=''>
+      <div className='text-white'>
         <label htmlFor="first-name-input">First Name:</label>
         <input
           type="text"
@@ -43,7 +43,7 @@ function CreateAccount() {
           onChange={handleFirstNameChange}
         />
       </div>
-      <div className='mt-2'>
+      <div className='mt-2 text-white'>
         <label htmlFor="last-name-input">Last Name:</label>
         <input
           type="text"
@@ -52,7 +52,7 @@ function CreateAccount() {
           onChange={handleLastNameChange}
         />
       </div>
-      <div className=' flex flex-col py-2 '>
+      <div className=' flex flex-col py-2 text-white '>
         <label htmlFor="email-input">Email:</label>
         <input
           type="email"
@@ -62,7 +62,7 @@ function CreateAccount() {
           onChange={handleEmailChange}
         />
       </div>
-      <div className=' flex flex-col py-2'>
+      <div className=' flex flex-col py-2 text-white'>
         <label htmlFor="password-input">Password:</label>
         <input
           type="password"
@@ -72,7 +72,7 @@ function CreateAccount() {
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit" className='mt-2 '>Create Account</button>
+      <button type="submit" className='mt-2 text-white'>Create Account</button>
       </div>
     </form>
     </div>

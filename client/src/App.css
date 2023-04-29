@@ -54,7 +54,7 @@ header {
 	left: 0;
 	right: 0;
 	width: 100%; /* Set width to 100% */
-	background-color: #FCD5CE;
+	background-color: #ebbdda;
 	color: white;
 	padding: 20px;
 	text-align: center;
@@ -133,7 +133,7 @@ button[type="submit"]:hover {
   align-items: center;
   margin-top: 20px;
   width: 100%;
-  background-color: #4ce2a4;
+  background-color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -170,7 +170,7 @@ button[type="submit"]:hover {
 
 
 .footer {
-  background-color: #c8dbd5;
+  background-color: #ebbdda;
   width: 100%;
   text-align: center;
   padding: 20px;
