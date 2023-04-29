@@ -4,16 +4,16 @@ import Bookshop from '../assets/Bookshop.png'
 export default function Login() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-96 p-6 shadow-lg bg-gradient-to-r from-red-800 via-red-600 to-red-800 rounded-md">
+      <div className="w-96 p-6 shadow-lg bg-gradient-to-r from-pink-800 via-red-600 to-pink-800 rounded-md">
         <h1 className="text-3xl block text-center font-semibold text-lime-400"><i className="fa-solid fa-user"></i> Login</h1>
           {/* <!-- Username --> */}
           <div className="mt-3">
-            <label for="username" className="block text-base mb-2 text-lime-400">Username/Email</label>
-            <input type="text" id="user-login" className="border rounded-md w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-lime-600" placeholder="Enter your Username or email" />
+            <label for="username" className="block text-base mb-2 text-pink-400">Username/Email</label>
+            <input type="text" id="user-login" className="border rounded-md w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-pink-600" placeholder="Enter your Username or email" />
           </div>
           {/* <!-- Password --> */}
           <div className="mt-3">
-            <label for="password" className="block text-base mb-2 text-lime-400">Password</label>
+            <label for="password" className="block text-base mb-2 text-pink-400">Password</label>
             <input type="password" id="password-login" className="border rounded-md w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-lime-600" placeholder="Enter Password..." />
           </div>
           <div className="mt-3 flex justify-between items-center">

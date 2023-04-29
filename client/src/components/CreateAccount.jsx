@@ -30,8 +30,8 @@ function CreateAccount() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-96 p-6 shadow-lg bg-gradient-to-r  from-red-800 via-red-600 to-red-800 rounded-md">
-        <h1 className="text-3xl block text-center font-semibold text-lime-400"><i className="fa-solid fa-user"></i> Sign Up</h1>
+      <div className="w-50 p-8 shadow-lg bg-gradient-to-r  from-pink-800 via-red-600 to-pink-800 rounded-md">
+        <h1 className="text-3xl block text-center font-semibold text-pink-400"><i className="fa-solid fa-user"></i> Sign Up</h1>
     <form onSubmit={handleSubmit}>
       <div className='flex flex-col'>
       <div className=''>
@@ -52,25 +52,27 @@ function CreateAccount() {
           onChange={handleLastNameChange}
         />
       </div>
-      <div className='mt-2'>
+      <div className=' flex flex-col py-2 '>
         <label htmlFor="email-input">Email:</label>
         <input
           type="email"
           id="email-input"
+          className="w-70 h-10"
           value={email}
           onChange={handleEmailChange}
         />
       </div>
-      <div className='mt-2'>
+      <div className=' flex flex-col py-2'>
         <label htmlFor="password-input">Password:</label>
         <input
           type="password"
           id="password-input"
+          className="w-70 h-10"
           value={password}
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit" className='mt-2'>Create Account</button>
+      <button type="submit" className='mt-2 '>Create Account</button>
       </div>
     </form>
     </div>
