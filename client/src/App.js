@@ -17,14 +17,15 @@ function App() {
     <div>
       {/* <NavBar /> */}
 {/* <HomePage /> */}
-      {/* <Login /> */}
-      {/* <Home /> */}
+       {/*<Login />*/} 
+      {/* <Home />  */}
       {/* <Product/> */}
       {/* <CreateAccount /> */}
-      {/* <ProductPage /> */}
       <Cart />
       {/* <CreateAccountPage /> */}
       {/* <LoginPage /> */}
+       {/*<CreateAccount /> */}
+      {/*<ProductPage />*/}
     </div>
   );
 }
