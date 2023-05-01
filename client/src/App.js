@@ -1,7 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-
-import { BrowserRouter as Router } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from "./components/Home";
 import ProductPage from "./pages/ProductPage";
 import Cart from "./pages/Cart";
@@ -10,23 +8,17 @@ import LoginPage from "./pages/LoginPage";
 
 // import carousel from "./components/carousel";
 
-
 function App() {
   return (
     <div className='overflow-hidden'>
       <Router>
-        <Switch>
-          <Route path='/' component={Home} />
-          <Route path='/product/:id' component=
-          {ProductPage} />
-          <Route path='/login' component=
-          {LoginPage} />
-          <Route path='/signup' component=
-          {CreateAccountPage} />
-          <Route path='/cart' component=
-          {Cart} />
-  
-        </Switch>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/product/:id' element={<ProductPage/>} />
+          <Route path='/login/' element={<LoginPage/>} />
+          <Route path='/signup' element={<CreateAccountPage/>} />
+          <Route path='/cart' element={<Cart/>} />
+        </Routes>
         {/* <Footer /> */}
       </Router>
     </div>
