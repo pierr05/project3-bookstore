@@ -1,10 +1,9 @@
-import Login from "./components/Login";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from "./components/Home";
-import Product from "./components/Product";
-import CreateAccount from "./components/CreateAccount";
 import ProductPage from "./pages/ProductPage";
-import NavBar from "./components/NavBar";
-import HomePage from "./pages/HomePage";
 import Cart from "./pages/Cart";
 import CreateAccountPage from "./pages/CreateAccountPage";
 import LoginPage from "./pages/LoginPage";
@@ -14,18 +13,22 @@ import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
-    <div>
-      {/* <NavBar /> */}
-{/* <HomePage /> */}
-       {/*<Login />*/} 
-      {/* <Home />  */}
-      {/* <Product/> */}
-      {/* <CreateAccount /> */}
-      <Cart />
-      {/* <CreateAccountPage /> */}
-      {/* <LoginPage /> */}
-       {/*<CreateAccount /> */}
-      {/*<ProductPage />*/}
+    <div className='overflow-hidden'>
+      <Router>
+        <Switch>
+          <Route path='/' component={Home} />
+          <Route path='/product/:id' component=
+          {ProductPage} />
+          <Route path='/login' component=
+          {LoginPage} />
+          <Route path='/signup' component=
+          {CreateAccountPage} />
+          <Route path='/cart' component=
+          {Cart} />
+  
+        </Switch>
+        {/* <Footer /> */}
+      </Router>
     </div>
   );
 }
