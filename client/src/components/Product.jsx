@@ -14,26 +14,28 @@ const Product = () => {
 
 
     return (
-        <div className='flex flex-col justify-between lg:flex-row gap-4 lg:items-center bg-purple-200'>
+        <div className='flex flex-col justify-between lg:flex-row gap-4 lg:items-center bg-pink-400'>
             <div className='flex flex-col gap-6 lg:w-2/4'>
                 <img src={activeImg} alt='' className='w-1/2 h-50 ml-20' />
             </div>
             {/* About */}
             <div className='flex flex-col gap-4 lg:w-2/4 mx-20'>
                 <div>
-                    <span className='font-semibold'>headtitle</span>
-                    <h1 className='text-3xl font-bold'>Harry Potter Book</h1>
+                    <span className='font-semibold text-white'>headtitle</span>
+                    <h1 className='text-3xl font-bold text-white'>Harry Potter Book</h1>
                 </div>
-                <p className='text-gray-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus aliquam dui, aliquet faucibus odio mattis nec. Fusce ultricies tincidunt nisl at molestie. Donec vel elementum risus, at bibendum nunc. Pellentesque luctus purus sed urna sollicitudin, id sodales ex congue. Duis viverra posuere mi. Curabitur at lacinia libero. Nam sed porttitor lacus. Sed ultrices neque id quam finibus consectetur. Cras ut imperdiet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean quam justo, auctor et nulla quis, cursus pellentesque arcu. Nam pharetra nisl quis luctus faucibus.
+                <p className='text-gray-200'>Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's conflict with Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).
+
+The series was originally published in English by Bloomsbury in the United Kingdom and Scholastic Press in the United States. All versions around the world are printed by Grafica Veneta in Italy. A series of many genres, including fantasy, drama, coming-of-age fiction, and the British school story (which includes elements of mystery, thriller, adventure, horror, and romance), the world of Harry Potter explores numerous themes and includes many cultural meanings and reference
                 </p>
-                <h6 className=' text-2xl font-semibold'>$ 25.99</h6>
+                <h6 className=' text-2xl font-semibold text-white'>$ 25.99</h6>
                 <div className='flex flex-row items-center gap-12'>
                     <div className=' flex flow-row items-center'>
-                        <button className=' bg-violet-300 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
+                        <button className=' bg-pink-200 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
                         <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                        <button className='bg-violet-300 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
+                        <button className='bg-pink-200 p-2 px-5 text-white rounded-lg text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
                     </div>
-                    <button className='bg-violet-300 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+                    <button className='bg-pink-200 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
                 </div>
             </div>
         </div>
