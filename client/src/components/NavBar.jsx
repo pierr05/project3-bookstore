@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
 
 
-    <div className="h-[60px] shadow-md relative z-10 bg-rose-200 ">
+    <div className="h-[60px] shadow-md relative z-10 bg-rose-200 text-white ">
       <div className="pl-[20px] pr-[20px] pt-[10px] pb-[10px] flex justify-between items-center mobile:pl-0 mobile:pr-0  ">
 
           {/* Logo */}
