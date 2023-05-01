@@ -13,11 +13,11 @@ const NavBar = () => {
 
           {/* Logo */}
           <div className="center flex-1 mobile:ml-6">
-              <div className = "font-bold mobile:text-sm">Trash to Treasure</div>
+              <div className = "font-bold mobile:text-sm text-white ">Trash to Treasure</div>
           </div>
 
           {/* Right Side */}
-          <div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2]">
+          <div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2] text-white">
           <div className={style}><a href='#'>Register</a></div>
               <div className={style}><a href='#'>Sign In</a></div>
               <div className={style}>

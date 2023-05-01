@@ -31,7 +31,7 @@ function CreateAccount() {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="w-50 p-8 shadow-lg bg-gradient-to-r  from-pink-300 via-pink-400 to-pink-500 rounded-md">
-        <h1 className="text-3xl block text-center font-semibold text-gray-200"><i className="fa-solid fa-user"></i> Sign Up</h1>
+        <h1 className="text-3xl block text-center font-semibold text-white"><i className="fa-solid fa-user"></i> Sign Up</h1>
     <form onSubmit={handleSubmit}>
       <div className='flex flex-col'>
       <div className='text-white'>
@@ -40,6 +40,7 @@ function CreateAccount() {
           type="text"
           id="first-name-input"
           value={firstName}
+          placeholder='First Name'
           onChange={handleFirstNameChange}
         />
       </div>
@@ -49,6 +50,7 @@ function CreateAccount() {
           type="text"
           id="last-name-input"
           value={lastName}
+          placeholder='Last Name'
           onChange={handleLastNameChange}
         />
       </div>
@@ -59,6 +61,7 @@ function CreateAccount() {
           id="email-input"
           className="w-70 h-11 rounded-lg"
           value={email}
+          placeholder='  Email'
           onChange={handleEmailChange}
         />
       </div>
@@ -69,6 +72,7 @@ function CreateAccount() {
           id="password-input"
           className="w-70 h-11 rounded-lg"
           value={password}
+          placeholder='  Password'
           onChange={handlePasswordChange}
         />
       </div>

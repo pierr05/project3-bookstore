@@ -8,7 +8,7 @@ import hairy3 from '../assets/image3.jpeg'
 import monsters from '../assets/monsters.png'
 import princess from '../assets/princess.png'
 import unicorn from '../assets/unicorn.png'
-import '../App.css'
+import '../components/home.css'
 import { AiOutlineShoppingCart} from "react-icons/ai";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
     'text-[14px], cursor-pointer, ml-[25px] mobile:ml-[5px]';
 
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center h-full m-0 p-0'>
     <header>
 		<h1>Trash to Treasure</h1>
 		<form>

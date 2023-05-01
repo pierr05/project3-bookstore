@@ -5,6 +5,6 @@
 
 @layer base {
     button{
-        @apply border border-black rounded-xl px-5 py-1
+        @apply text-white bg-[#8a4af3] rounded-xl shadow-md p-3 hover:scale-[1.1] ease-in duration-300;
     }
 }
