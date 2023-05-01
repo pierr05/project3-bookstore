@@ -9,7 +9,6 @@ import monsters from '../assets/monsters.png'
 import princess from '../assets/princess.png'
 import unicorn from '../assets/unicorn.png'
 import '../components/home.css'
-import { AiOutlineShoppingCart} from "react-icons/ai";
 
 export default function Home() {
 
@@ -18,22 +17,7 @@ export default function Home() {
 
   return (
     <div className='flex flex-col justify-center items-center h-full m-0 p-0'>
-    <header>
-		<h1>Trash to Treasure</h1>
-		<form>
-			<input type="text" id="search-input" name="search-input" placeholder="Search"/>
-			<button type="submit">Go</button>
-		</form>
-		<div className="right flex flex-1 items-center justify-end mobile:justify-center mobile:flex-[2]">
-              <div className={style}><a href='#'>Register</a></div>
-              <div className={style}><a href='#'>Sign In</a></div>
-              <div className={style}>
-                <div>
-				<a href='#'><AiOutlineShoppingCart/></a>
-                </div>
-              </div>
-          </div>
-	</header>
+    
 
 	<div class="wrapper">
 		<section class="slideshow">

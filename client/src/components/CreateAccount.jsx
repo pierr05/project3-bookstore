@@ -1,30 +1,40 @@
 import React, { useState } from 'react';
-
+import { useMutation } from '@apollo/client'
+import { ADD_USER } from '../utils/mutations'
+import Auth from '../utils/auth'
 function CreateAccount() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
+  const [userFormData, setUserFormData] = useState({firstName:"", lastName:"",email:"", password:"",});
+  
+  const [addUser, { error, data }] = useMutation(ADD_USER);
+  const handleInputChange = (event) =>
+  {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+    console.log(userFormData)
   };
 
-  const handleLastNameChange = (event) => {
-    setLastName(event.target.value);
-  };
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePasswordChange  = (event) => {
-    setPassword(event.target.value);
-  };
+  
 
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
+    console.log (userFormData)
+    try
+    {
+      const { data } = await addUser({
+        variables: { ...userFormData },
+      });
+      Auth.login(data.addUser.token);
+    } catch (err)
+    {
+      console.error(err);
+    }
+    setUserFormData({
+      firstName: "",
+      lastName:"",
+      email: "",
+      password: "",
+    });
     // Here you can perform validation and submit the form data to your backend server.
   };
 
@@ -39,9 +49,10 @@ function CreateAccount() {
         <input
           type="text"
           id="first-name-input"
-          value={firstName}
+          name="firstName"
+          onChange={handleInputChange}
+          value={userFormData.firstName}
           placeholder='First Name'
-          onChange={handleFirstNameChange}
         />
       </div>
       <div className='mt-2 text-white'>
@@ -49,9 +60,10 @@ function CreateAccount() {
         <input
           type="text"
           id="last-name-input"
-          value={lastName}
+          name='lastName'
+          value={userFormData.lastName}
           placeholder='Last Name'
-          onChange={handleLastNameChange}
+          onChange={handleInputChange}
         />
       </div>
       <div className=' flex flex-col py-2 text-white '>
@@ -59,10 +71,11 @@ function CreateAccount() {
         <input
           type="email"
           id="email-input"
+          name='email'
           className="w-70 h-11 rounded-lg"
-          value={email}
+          value={userFormData.email}
           placeholder='  Email'
-          onChange={handleEmailChange}
+          onChange={handleInputChange}
         />
       </div>
       <div className=' flex flex-col py-2 text-white'>
@@ -71,9 +84,10 @@ function CreateAccount() {
           type="password"
           id="password-input"
           className="w-70 h-11 rounded-lg"
-          value={password}
+          name='password'
+          value={userFormData.password}
           placeholder='  Password'
-          onChange={handlePasswordChange}
+          onChange={handleInputChange}
         />
       </div>
       <button type="submit" className='mt-2 text-white'>Create Account</button>
