@@ -46,7 +46,7 @@ function Cart() {
               <div className=" flex-auto flex flex-col justify-end items-end mobile:mt-7 mobile:mb-7 ">
                 <Counter />
                 <p className="flex items-center justify-end text-4xl mt-3">
-                  <b>$70</b>
+                  <b>$25.99</b>
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ function Cart() {
               <div className="flex flex-col justify-end items-end mt-3 flex-auto ">
                 <Counter />
                 <p className="flex items-center justify-center text-4xl mt-3">
-                  <b>$70</b>
+                  <b>$25.99</b>
                 </p>
               </div>
             </div>
@@ -81,7 +81,7 @@ function Cart() {
               <h1 className="text-[2rem] font-semibold ">SUMMARY</h1>
               <div className="flex justify-between mt-3 w-[100%]">
                 <p>Subtotal</p>
-                <p>$100</p>
+                <p>$52</p>
               </div>
               <div className="flex justify-between mt-3 w-[100%]">
                 <p>Shipping</p>
@@ -89,7 +89,7 @@ function Cart() {
               </div>
               <div className="flex justify-between mt-3 w-[100%] text-3xl font-bold">
                 <p>Total</p>
-                <p>$110</p>
+                <p>$62</p>
               </div>
 
             </div>

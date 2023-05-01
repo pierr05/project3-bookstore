@@ -27,7 +27,7 @@ export default function Login() {
           </div>
           {/* <!-- Login Button --> */}
           <div id="login-form" className="mt-5">
-            <button type="submit" className="border-2 border-red-400 bg-red-400 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-white font-semibold"><i className="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Login</button>
+            <button type="submit" className="border-2 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-white font-semibold"><i className="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Login</button>
           </div>
           <div className="text-xs text-white my-2">Don't have a account? <a href="/signup" className="text-white">Sign up</a></div>
       </div>
