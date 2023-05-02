@@ -34,6 +34,6 @@
 
   ## Questions
   ### If you have any questions, contact me here:
-  Email: fayane.jean17@gmail.com
+  Email: fayane.jean17@gmail.com | magdalenawild091@gmail.com
 
-  Github: [fayane17](https://github.com/fayane17)  
+  Github: [fayane17](https://github.com/fayane17) | [01magdalenawild](https://github.com/01magdalenawild)
